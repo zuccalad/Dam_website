@@ -1,36 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello World Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f4f8;
-      color: #333;
-      text-align: center;
-      padding: 50px;
-    }
-    h1 {
-      color: #007acc;
-    }
-    p {
-      font-size: 1.2em;
-    }
-    footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #777;
-    }
-  </style>
-</head>
-<body>
-  <h1>Hello, World!</h1>
-  <p>Welcome to my very first simple website.</p>
-  <p>This is a great place to start learning HTML and Damiano CSS!</p>
-  <footer>
-    © 2025 My Simple Site
-  </footer>
-</body>
-</html>
+
+<div id="header"></div>
+
+<script>
+  fetch('00_script.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('00_script').innerHTML = data;
+    });
+</script>
